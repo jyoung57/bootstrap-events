@@ -43,18 +43,33 @@
       <div class="card-img-overlay">
         <h5 class="card-title text-success fs-1 p-5">About Colorful Events</h5>
         <p class="card-text text-danger fs-3 p-5">Colorful Events was created in 2023 by a developer that wanted to bring the world of color to the eyes of the public.  Profit was not a motivator for this site, so the art the you see is not available for purchase.  The artist are paid a portion of the proceeds from donations that are sent to the site and the rest goes to maintaining this site and charities.  ALL IN THE NAME OF COLOR!!!</p>
+        <p class="card-text text-dark fs-4 p-5">If you would like to submit suggestions to make our site better, please submit your suggestions below.</p>
+        <form class="row g-3 needs-validation">
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label fs-5">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label fs-5">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" required>
+          </div><br>
+          <div class="col-md-3">
+            <label for="validationCustom05" class="form-label fs-5">Please submit your suggestions here</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+          </div>
+          <div class="col-12">
+            <div class="form-check fs-5">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label fs-5" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </div>
+        </form>
       </div>
-    </div>
-    <div>
-      <form onsubmit="console.log('Form was submitted')">
-        <label for="first-name">First Name</label>
-        <input name="first-name" type="text">
-        <label for="last-name">Last Name</label>
-        <input name="last-name" type="text"><br>
-        <label for="suggestion">Please submit suggestions here:</label>
-        <input name="suggestion" type="text"><br>
-        <input type="submit">
-      </form>
     </div>
   </main>
   <footer></footer>
