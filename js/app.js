@@ -86,7 +86,7 @@ const countDownTimer = {
   start: function () {
     this.interval = setInterval (() => {
       const now = new Date().getTime();
-      const remainingTime = this.eventDate = now;
+      const remainingTime = this.eventDate - now;
 
       if (remainingTime <= 0) {
         clearInterval(this.interval);
@@ -94,7 +94,7 @@ const countDownTimer = {
       } else {
         this.days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
         this.hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        this.minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60 * 60));
+        this.minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
         this.seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
         this.render();
